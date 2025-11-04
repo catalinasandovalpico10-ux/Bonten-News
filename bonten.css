@@ -1,0 +1,190 @@
+/* === RESET === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0d0d0d;
+    color: #eaeaea;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #66b2ff;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #fff;
+  }
+  
+  /* === HEADER === */
+  .bonten-header {
+    text-align: center;
+    padding: 40px 10px 20px;
+    border-bottom: 1px solid #222;
+  }
+  
+  .bonten-title {
+    font-size: 2.2rem;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .bonten-subtitle {
+    color: #999;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  
+  /* === NAV === */
+  .bonten-nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    background-color: #111;
+    padding: 1px 0;
+    border-bottom: 1px solid #1e1e1e;
+  }
+  
+  .bonten-nav a {
+    color: #ddd;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .bonten-nav a:hover,
+  .bonten-active {
+    color: #66b2ff;
+  }
+  
+  /* === MAIN BODY === */
+  .bonten-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 20px;
+  }
+  
+  .bonten-section {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* === PROFILE CARD === */
+  .bonten-profile {
+    background-color: #151515;
+    border: 1px solid #1e1e1e;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 0 rgba(102, 178, 255, 0);
+  }
+  
+  .bonten-profile:hover {
+    transform: translateY(-6px);
+    border-color: #66b2ff;
+    box-shadow: 0 0 15px rgba(102, 178, 255, 0.4),
+                0 0 30px rgba(102, 178, 255, 0.15);
+  }
+  
+  .bonten-avatar {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #66b2ff;
+    transition: box-shadow 0.4s ease;
+  }
+  
+  .bonten-profile:hover .bonten-avatar {
+    box-shadow: 0 0 20px rgba(102, 178, 255, 0.5);
+  }
+  
+  .bonten-name {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .bonten-desc {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin: 10px 0 25px;
+  }
+  
+  /* === ROLES === */
+  .bonten-roles {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .bonten-roles p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #eaeaea;
+  }
+  
+  .bonten-roles i {
+    color: #66b2ff;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* === SOCIAL LINKS === */
+  .bonten-social {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .bonten-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: #eaeaea;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+  }
+  
+  .bonten-btn:hover {
+    background-color: #66b2ff;
+    color: #000;
+  }
+  
+  /* === FOOTER === */
+  .bonten-footer {
+    background-color: #0b0b0b;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 0.9rem;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* === RESPONSIVE === */
+  @media (max-width: 900px) {
+    .bonten-body {
+      flex-direction: column;
+      padding: 20px;
+    }
+  }
+  
